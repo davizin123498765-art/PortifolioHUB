@@ -1,0 +1,1 @@
+Automação feita para baixar imagens automaticamente do site http://flipzh.clicrbs.com.br/jornal-digital/pub/zh/ usando playwright em python
