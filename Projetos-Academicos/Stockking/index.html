@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockKing - Simplifique seus Investimentos</title>
+    <style>
+        /* Estilos Globais */
+        :root {
+            --primary-color: #27ae60;
+            --secondary-color: #2c3e50;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #219150;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #fff;
+            color: var(--secondary-color);
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        header a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        header nav {
+            float: right;
+            margin-top: 5px;
+        }
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        header nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        /* Seção Hero */
+        #showcase {
+            min-height: 400px;
+            background: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        #showcase h1 {
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+
+        /* Seção de Problema e Solução */
+        #solucao {
+            padding: 40px 0;
+            background: #fff;
+            text-align: center;
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .box {
+            flex: 1;
+            background: var(--bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-width: 250px;
+        }
+
+        /* Produtos de Investimento */
+        #investimentos {
+            padding: 40px 0;
+        }
+        #investimentos h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 250px;
+        }
+
+        /* Educação Financeira */
+        #educacao {
+            background: var(--secondary-color);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        #educacao h2 {
+            color: #fff;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 20px;
+            background: #222;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Simulador */
+        .simulador {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: var(--text-color);
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .simulador input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">StockKing</div>
+            <nav>
+                <ul>
+                    <li><a href="#solucao">A Solução</a></li>
+                    <li><a href="#investimentos">Portfólio</a></li>
+                    <li><a href="#educacao">Aprenda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>O primeiro passo para o seu futuro</h1>
+            <p>Uma plataforma que simplifica o acesso a investimentos, educação financeira e microinvestimentos automatizados.</p>
+            <a href="#investimentos" class="btn">Começar a Investir</a>
+        </div>
+    </section>
+
+    <section id="solucao">
+        <div class="container">
+            <h2>Por que o StockKing é diferente?</h2>
+            <p>Sabemos que muitas pessoas não investem por acharem o processo complexo demais ou por acreditarem que é preciso muito dinheiro. Nós mudamos essa regra.</p>
+            
+            <div class="box-container">
+                <div class="box">
+                    <h3>Interface Simples</h3>
+                    <p>Sem jargões complicados. Uma jornada clara para transformar o seu primeiro contato com investimentos.</p>
+                </div>
+                <div class="box">
+                    <h3>Microinvestimento</h3>
+                    <p>Comece com pouco. Nosso sistema automatizado permite que você invista o troco ou pequenos valores mensais.</p>
+                </div>
+                <div class="box">
+                    <h3>Educação Integrada</h3>
+                    <p>Aprenda enquanto investe. Conteúdos curtos de educação financeira para acabar com a insegurança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="investimentos">
+        <div class="container">
+            <h2>Opções de Investimento</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>CDB (Renda Fixa)</h3>
+                    <p><strong>Segurança para começar:</strong> Empreste seu dinheiro para bancos e receba com juros. Ideal para a sua reserva de emergência, com baixo risco e rendimento garantido superior à poupança.</p>
+                </div>
+                <div class="card">
+                    <h3>Ações (Parte de Empresas)</h3>
+                    <p><strong>Seja sócio:</strong> Compre pequenas fatias de grandes empresas. Com o StockKing, você entende o mercado de forma simples e pode lucrar com a valorização e dividendos.</p>
+                </div>
+                <div class="card">
+                    <h3>Fundos Imobiliários (Imóveis)</h3>
+                    <p><strong>Renda de aluguéis:</strong> Invista em grandes shoppings e prédios comerciais sem precisar comprar um imóvel inteiro. Receba pagamentos mensais (dividendos) direto na conta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacao">
+        <div class="container">
+            <h2>Simule seu Microinvestimento</h2>
+            <p>Veja como pequenos valores podem crescer com o tempo através da automação.</p>
+            
+            <div class="simulador">
+                <h3>Simulador Mágico</h3>
+                <label>Valor depositado por mês (R$):</label>
+                <input type="number" id="valorMensal" value="50" min="10">
+                <label>Tempo investindo (Anos):</label>
+                <input type="number" id="anos" value="5" min="1">
+                <button class="btn" onclick="calcular()">Ver Resultado</button>
+                <h3 id="resultadoSimulacao" style="margin-top: 20px; color: var(--primary-color);"></h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Projeto Técnico - Sistema StockKing &copy; 2026</p>
+    </footer>
+
+    <script>
+        function calcular() {
+            const valorMensal = parseFloat(document.getElementById('valorMensal').value);
+            const anos = parseInt(document.getElementById('anos').value);
+            
+            // Taxa fictícia de 10% ao ano para fins educativos
+            const taxaAnual = 0.10;
+            const taxaMensal = Math.pow(1 + taxaAnual, 1/12) - 1;
+            const meses = anos * 12;
+            
+            // Fórmula de juros compostos para depósitos regulares
+            const montante = valorMensal * ((Math.pow(1 + taxaMensal, meses) - 1) / taxaMensal);
+            const valorInvestido = valorMensal * meses;
+            
+            const resultadoElement = document.getElementById('resultadoSimulacao');
+            resultadoElement.innerHTML = `Em ${anos} anos, você terá aproximadamente <strong>R$ ${montante.toFixed(2).replace('.', ',')}</strong>.<br><small style="color:#666;">Você investiu do próprio bolso R$ ${valorInvestido.toFixed(2).replace('.', ',')}</small>`;
+        }
+    </script>
+</body>
+</html>
